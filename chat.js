@@ -57,7 +57,7 @@ function send(){
         let num = window.prompt('Enter Phone number with country code [Optional]')
         if(num !== ''){
             let msg = window.prompt('Enter the Message')
-            window.open('tel:'+num+'?body='+msg)
+            window.open('sms:'+num+'?body='+msg)
             respond(sender,'Texting : '+msg+', to : '+num)
         }
         else{
